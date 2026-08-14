@@ -1,0 +1,37 @@
+{
+  "name": "shopping-backend",
+  "version": "0.1.0",
+  "description": "E-commerce backend API for Shopping platform",
+  "private": true,
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec node --experimental-modules src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'No build needed for backend'",
+    "lint": "eslint src/",
+    "format": "prettier --write \"src/**/*.{js,json}\""
+  },
+  "keywords": ["ecommerce", "shopping", "daraz", "nepal"],
+  "author": "Sahani Digital Cable",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.1.0",
+    "bcryptjs": "^2.4.3",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.6.0",
+    "express-validator": "^7.0.0",
+    "stripe": "^14.0.0",
+    "nodemailer": "^6.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3"
+  }
+}
